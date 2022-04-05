@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body><script>
+    function palin()
+    {
+    var a,no,b,temp=0;
+    no= Number(prompt("value 1:","0"));
+    b=no;
+    while(no>0)
+    {
+    a=no%10;
+    no=parseInt(no/10);
+    temp=temp*10+a;
+    }
+    if(temp==b)
+    {
+    alert(" The given number is a Palindrome number");
+    }
+    else
+    {
+    alert("The given number is not a Palindrome number");
+    }
+    }
+    </script> 
+<button onclick="palin()">Check whether the given no is Palindrome or not</button></br></br>
+</body>
+</html>
